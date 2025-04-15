@@ -40,6 +40,30 @@ int main() {
         k++;
     } while (k <= casasRainha);
 
+    printf("\n");
+
+    // =============================
+    // MOVIMENTO DO CAVALO (FOR + WHILE)
+    // =============================
+    // O cavalo se move 2 casas para baixo e 1 casa para a esquerda
+    int movimentosParaBaixo = 2;
+    int movimentosParaEsquerda = 1;
+
+    printf("Movimento do CAVALO (2 para Baixo e 1 para Esquerda):\n");
+
+    // Loop externo (FOR): movimenta para baixo
+    for (int i = 1; i <= movimentosParaBaixo; i++) {
+        printf("Passo %d: Baixo\n", i);
+    }
+
+    // Loop interno (WHILE): movimenta para a esquerda
+    int m = 1;
+    while (m <= movimentosParaEsquerda) {
+        printf("Passo %d: Esquerda\n", movimentosParaBaixo + m); // Continuando a numeração
+        m++;
+    }
+
+
  
 
 // Desafio de Xadrez - MateCheck
